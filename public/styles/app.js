@@ -1,4 +1,4 @@
-//variables
+//Canvas design and positioning on the ejs file
 const c0 = $(".canvas0");
 const ctx0 = c0[0].getContext("2d");
 ctx0.moveTo(15, 0);
@@ -25,7 +25,7 @@ ctx2.stroke();
 
 const xValues = [100,200,300,400,500,600,700,800,900,1000];
 
-//Multiple Lines
+//Multiple Lines chart
 setInterval(timer,2000);
 function timer(){
   new Chart("myChart",{
@@ -88,4 +88,5 @@ new Chart("myChart2", {
   }
 });
 
+//Multiple line chart value timer and generator
 $("#myChart").style.transition = "all 1s";

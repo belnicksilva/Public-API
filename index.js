@@ -29,7 +29,8 @@ app.get('/', async (req,res)=>{
 
       sp500=Math.round(parseInt(stock.data.SPX.high));
       dow=Math.round(parseInt(stock.data.DJI.high));
-      
+
+      //Some data to be send to ejs file
       info={
         ethereum:ether,
         bitcoin:bit,
