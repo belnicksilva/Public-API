@@ -1,0 +1,179 @@
+body{
+    background-color: white;
+    color: white;
+}
+
+.navbar{
+    background-color: #8eac50;
+    color: #17594A!important;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+.nav-link,.navbar-brand{
+    color:white;
+}
+
+
+.item_right{
+    position:absolute;
+    right: 20px;
+    display: flex;
+    float: right!important;
+}
+
+.main_body{
+    position: absolute;
+    left: 15%;
+    width: 60%;
+    top: 8%;
+    height: 90%;
+    border: 1px solid inherit;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(142, 172, 80, 0.2), 0 6px 20px 0 rgba(142, 172, 80, 0.19); 
+}
+
+#secret_box{
+    width:100%;
+    height: 680px;
+    z-index: 0;
+    background-color: inherit;
+    border: 1px solid black;
+    background-color: #ffff;
+    opacity: 0;
+}
+
+.gifs{
+    position: absolute;
+    left: 20%;
+    top: 50px;
+    z-index: -1;
+}
+
+.box{
+    color: #8EAC50;
+    border: 1px solid inherit;
+    border-radius: 10px;
+    display: flex;
+    object-fit:contain;
+    margin: 10px 5px 0px 5px;
+    transition: box-shadow 1s;
+}
+
+.box:hover{
+    box-shadow: 0 4px 8px 0 rgba(142, 172, 80, 0.2), 0 6px 20px 0 rgba(142, 172, 80, 0.19);
+    z-index: 2;  
+}
+
+.s_1{
+    position: absolute;
+    top:11%;
+    background-color: white;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.s_2{
+    position: absolute;
+    top:11%;
+    left: 55%;
+    width: 250px;
+    background-color: white;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+.s_3{
+    position: absolute;
+    top:60%;
+    width: 250px;
+    background-color: white;
+    opacity: 0.2;
+    z-index: 0;
+}
+
+.stock_section{
+    display: inline;
+    margin-left: 45%;
+    z-index: 1;
+}
+
+.currency_section{
+    display: block;
+    position: relative;
+    top:60%;
+    z-index: 1;
+}
+
+.navbar-brand:hover, .nav-link{
+    color:#17594A;
+    transition: 0.5s;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.sidenav {
+    height: 50%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 8%;
+    left: 10px;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border: 1px solid inherit;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(142, 172, 80, 0.2), 0 6px 20px 0 rgba(142, 172, 80, 0.19); 
+}
+  
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #9f9f9f;
+    display: block;
+    transition:0.5s;
+}
+  
+.sidenav a:hover {
+    color: #17594A;
+    font-size: 18px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(203, 205, 199);
+}
+
+.div_charts{
+    background-color: rgb(245, 247, 240);
+    width: 320px;
+    height: auto;
+    border: 1px solid inherit;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(84, 102, 48, 0.2), 0 6px 20px 0 rgba(79, 96, 45, 0.19); 
+    position: absolute;
+    top: 8%;
+    right: 1% !important;
+    z-index: -1;
+}
+
+#myChart,#myChart2{
+    padding:20px 0 0 10px;
+}
+
+.menu{
+    margin-bottom:15px;
+}

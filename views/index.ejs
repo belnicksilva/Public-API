@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USE a Public API</title>
+
+    <!--links-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/f65ec1947e.js"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fa-solid fa-fingerprint fa-lg"></i>Bmind</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse item_right">
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-light" type="submit" style="margin-right:10px;">Search</button>
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="sidenav">
+    <a href="#" class="menu"><i class="fa-solid fa-brain fa-lg"></i>  A.I.</a>
+    <a href="#" class="menu"><i class="fa-solid fa-chart-line fa-lg"></i> Trades</a>
+    <a href="#" class="menu"><i class="fa-solid fa-bullseye fa-lg"></i> Strategies</a>
+    <a href="#" class="menu"><i class="fa-solid fa-arrow-up-right-dots fa-lg"></i> Prediction</a>
+    <a href="#" class="menu"><i class="fa-solid fa-database fa-lg"></i> Data Analyses</a>
+    <a href="#" class="menu"><i class="fa-solid fa-lock fa-lg"></i> Cybersecurity</a>
+
+  </div>
+  <div class="main_body">
+    <div class=" box d-inline-flex p-2">
+      <i class="uil-envelope-shield fs-2 text-center bg-primary rounded-circle"></i>
+      <div class="ms-3">
+        <div class="d-flex align-items-center">
+          <h3 class="mb-0"><i class="fa-brands fa-bitcoin fa-lg"></i></h3>
+        </div>
+        <p class="fs-normal mb-0">USD:<%=bitcoin%>$</p>
+      </div>
+    </div>
+    <div class=" box d-inline-flex p-2">
+      <i class="uil-envelope-shield fs-2 text-center bg-primary rounded-circle"></i>
+      <div class="ms-3">
+        <div class="d-flex align-items-center">
+          <h3 class="mb-0"><i class="fa-brands fa-ethereum fa-lg"></i></h3>
+        </div>
+        <p class="fs-normal mb-0">USD:<%=ethereum%>$</p>
+      </div>
+    </div>
+    <div class="stock_section">
+      <div class=" box d-inline-flex p-2">
+        <i class="uil-envelope-shield fs-2 text-center bg-primary rounded-circle"></i>
+        <div class="ms-3">
+          <div class="d-flex align-items-center">
+            <h3 class="mb-0">S&P500</h3>
+          </div>
+          <p class="fs-normal mb-0">USD:<%=sp500%>$</p>
+        </div>
+      </div>
+      <div class=" box d-inline-flex p-2">
+        <i class="uil-envelope-shield fs-2 text-center bg-primary rounded-circle"></i>
+        <div class="ms-3">
+          <div class="d-flex align-items-center">
+            <h3 class="mb-0">DOW j.</h3>
+          </div>
+          <p class="fs-normal mb-0">USD:<%=dow%>$</p>
+        </div>
+      </div>
+    </div>
+    <div class="currency_section">
+      <div class=" box d-inline-flex p-2">
+        <i class="uil-envelope-shield fs-2 text-center bg-primary rounded-circle"></i>
+        <div class="ms-3">
+          <div class="d-flex align-items-center">
+            <h4 class="mb-0">EUR/USD</h4>
+          </div>
+          <p class="fs-normal mb-0">USD:<%=eur_usd%>$</p>
+        </div>
+      </div>
+      <div class=" box d-inline-flex p-2">
+        <i class="uil-envelope-shield fs-2 text-center bg-primary rounded-circle"></i>
+        <div class="ms-3">
+          <div class="d-flex align-items-center">
+            <h4 class="mb-0">EUR/GBP</h4>
+          </div>
+          <p class="fs-normal mb-0">USD:<%=eur_gbp%>$</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="s_1">
+      <canvas class="canvas0" width="500" height="300"></canvas>
+    </div>
+    <div class="s_2">
+      <canvas class="canvas1" width="500" height="100"></canvas>
+    </div>
+    <div class="s_3">
+      <canvas class="canvas2" width="500" height="200"></canvas>
+    </div>
+    <div id="secret_box">
+      <p>.</p>
+    </div>
+    <div>
+      <iframe src="https://giphy.com/embed/eljCVpMrhepUSgZaVP" width="660" height="660" frameBorder="0" class="gifs giphy-embed" allowFullScreen></iframe>
+    </div>
+  </div>
+  <div class="div_charts">
+    <canvas id="myChart" style="width:100%;max-width:300px"></canvas>
+    <canvas id="myChart2" style="width:100%;max-width:320px"></canvas>
+  </div>
+
+  <footer>
+    <p>Author: Belnick Silva</p>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!--JS-->
+  <script src="/styles/app.js" charset="utf-8"></script>
+</body>
+</html>
